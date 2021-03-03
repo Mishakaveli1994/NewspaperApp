@@ -39,8 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'whitenoise.runserver_nostatic',
-    'django.contrib.staticfiles',
 
     # 3rd Party
     'crispy_forms',
@@ -48,7 +46,10 @@ INSTALLED_APPS = [
     # Local
     'accounts',
     'pages',
-    'articles'
+    'articles',
+
+    'whitenoise.runserver_nostatic',
+    'django.contrib.staticfiles',
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
